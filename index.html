@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>福岡旅行しおり</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Hiragino Kaku Gothic ProN", "Segoe UI", sans-serif;
+      background-color: #fff0f5;
+      color: #444;
+    }
+
+    header {
+      background: linear-gradient(90deg, #f8a5c2, #fcdff0);
+      color: white;
+      padding: 1.2rem;
+      text-align: center;
+      font-size: 1.8rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .time-display {
+      text-align: center;
+      background: #ffe4ee;
+      padding: 0.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 1.2rem;
+    }
+
+    .day {
+      background-color: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .day h2 {
+      background-color: #f8a5c2;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 10px;
+      font-size: 1.2rem;
+      margin-top: 0;
+      box-shadow: inset 0 -2px 4px rgba(0,0,0,0.1);
+    }
+
+    .schedule {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 0.8rem;
+    }
+
+    .schedule li {
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px dotted #e5a9b4;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+      transition: background-color 0.3s;
+    }
+
+    .schedule li:last-child {
+      border-bottom: none;
+    }
+
+    .schedule li.now {
+      background-color: #ffe6f0;
+      border-left: 4px solid #f06292;
+    }
+
+    .time {
+      font-weight: bold;
+      color: #d6336c;
+      min-width: 4.5rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.4rem;
+      }
+
+      .schedule li {
+        font-size: 0.95rem;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .time {
+        margin-bottom: 0.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>🌸 福岡旅行タイムスケジュール（2025年8月3日〜5日）</header>
+  <div class="time-display" id="nowTime">現在時刻：読み込み中...</div>
+  <div class="container">
+
+    <div class="day">
+      <h2>1日目：8月3日（日）</h2>
+      <ul class="schedule">
+        <li data-date="2025-08-03" data-time="9:30"><span class="time">9:30</span>起床</li>
+        <li data-date="2025-08-03" data-time="10:50"><span class="time">10:50</span>家出る！</li>
+        <li data-date="2025-08-03" data-time="11:00"><span class="time">11:00</span>三山木駅</li>
+        <li data-date="2025-08-03" data-time="12:10"><span class="time">12:10</span>京都駅発(バス)</li>
+        <li data-date="2025-08-03" data-time="13:00"><span class="time">13:00</span>伊丹空港着</li>
+        <li data-date="2025-08-03" data-time="14:25"><span class="time">14:25</span>伊丹空港 出発(ANA425便)</li>
+        <li data-date="2025-08-03" data-time="15:40"><span class="time">15:40</span>福岡空港 到着</li>
+
+        <li data-date="2025-08-03" data-time="16:30">
+            <span class="time">16:30</span>
+            <a href="https://fukuoka-nakasukawabata.hotel-vista.jp/ja/access" target="_blank">
+            ホテルチェックイン(ホテルビスタ福岡 中洲川端)</a>
+        </li>
+
+        <li data-date="2025-08-03" data-time="17:50"><span class="time">17:50</span>ホテル出る！</li>
+        <li data-date="2025-08-03" data-time="18:00">
+            <span class="time">18:00</span>
+            <a href="https://www.google.com/maps?q=福岡市博多区上川端町" target="_blank">
+            中洲川端駅（地下鉄乗換）発</a>
+        </li>
+
+        <li data-date="2025-08-03" data-time="18:30">
+            <span class="time">18:30</span>
+            <a href="https://www.google.com/maps?q=福岡県福岡市南区向野2-2-12" target="_blank">
+             博多もつ鍋 やま中 本店（大橋本店）</a>
+        </li>
+
+        <li data-date="2025-08-03" data-time="20:30"><span class="time">20:30</span>観光</li>
+        <li data-date="2025-08-03" data-time="22:00"><span class="time">22:00</span>ホテル帰宅</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2>2日目：8月4日（月）</h2>
+      <ul class="schedule">
+        <li data-date="2025-08-04" data-time="09:00"><span class="time">09:00</span>ホテルで朝食</li>
+        <li data-date="2025-08-04" data-time="11:00"><span class="time">11:00</span>ホテル出る！</li>
+
+        <li data-date="2025-08-04" data-time="11:15">
+        <span class="time">11:15</span>
+            <a href="https://www.google.com/maps?q=糸島" target="_blank">糸島へ移動</a>
+        </li>
+        <li data-date="2025-08-04" data-time="12:00"><span class="time">12:00</span>糸島着</li>
+        <li data-date="2025-08-04" data-time="12:30">
+            <span class="time">12:30</span>
+            <a href="https://www.google.com/maps?q=福岡県糸島市神在西2-24-27" target="_blank">
+             糸島食堂 本店(海鮮丼ランチ)</a>
+        </li>
+
+        <li data-date="2025-08-04" data-time="14:00"><span class="time">14:00</span>糸島観光</li>
+        <li data-date="2025-08-04" data-time="19:30"><span class="time">19:30</span>車返却</li>
+        <li data-date="2025-08-04" data-time="19:40"><span class="time">19:40</span>筑前前原駅発</li>
+        <li data-date="2025-08-04" data-time="20:30">
+            <span class="time">20:30</span>
+            <a href="https://www.google.com/maps/place/%E6%97%A5%E6%9C%AC%E3%80%81%E3%80%92812-0012+%E7%A6%8F%E5%B2%A1%E7%9C%8C%E7%A6%8F%E5%B2%A1%E5%B8%82%E5%8D%9A%E5%A4%9A%E5%8C%BA%E5%8D%9A%E5%A4%9A%E9%A7%85%E4%B8%AD%E5%A4%AE%E8%A1%97%EF%BC%91%E2%88%92%EF%BC%91" target="_blank">
+             shinshin(博多デイトス店)</a>
+        </li>
+        <li data-date="2025-08-04" data-time="22:00"><span class="time">22:00</span>ホテル帰宅</li>
+      </ul>
+    </div>
+
+    <div class="day">
+      <h2>3日目：8月5日（火）</h2>
+      <ul class="schedule">
+        <li data-date="2025-08-05" data-time="09:00"><span class="time">09:00</span>ホテルで朝食</li>
+        <li data-date="2025-08-05" data-time="11:00"><span class="time">11:00</span>チェックアウト(荷物預ける)</li>
+        <li data-date="2025-08-05" data-time="11:20"><span class="time">11:20</span>中洲川端駅（地下鉄乗換）発</li>
+        <li data-date="2025-08-05" data-time="12:30"><span class="time">12:30</span>昼食(大宰府)＆観光</li>
+        <li data-date="2025-08-05" data-time="15:20"><span class="time">15:20</span>大宰府駅発</li>
+        <li data-date="2025-08-05" data-time="16:00"><span class="time">16:00</span>中洲川端駅発</li>
+        <li data-date="2025-08-05" data-time="16:20"><span class="time">16:20</span>ホテルで荷物回収して出発</li>
+        <li data-date="2025-08-05" data-time="16:30"><span class="time">16:30</span>福岡空港へ移動</li>
+        <li data-date="2025-08-05" data-time="16:45"><span class="time">16:45</span>福岡空港着</li>
+        <li data-date="2025-08-05" data-time="17:45"><span class="time">17:45</span>福岡空港 出発</li>
+        <li data-date="2025-08-05" data-time="18:55"><span class="time">18:55</span>伊丹空港 到着</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    function updateNowTime() {
+      const now = new Date();
+      const h = now.getHours().toString().padStart(2, '0');
+      const m = now.getMinutes().toString().padStart(2, '0');
+      const yyyy = now.getFullYear();
+      const mm = (now.getMonth() + 1).toString().padStart(2, '0');
+      const dd = now.getDate().toString().padStart(2, '0');
+      const todayStr = `${yyyy}-${mm}-${dd}`;
+      document.getElementById('nowTime').textContent = `現在時刻：${h}:${m}（${todayStr}）`;
+
+      const nowMinutes = parseInt(h) * 60 + parseInt(m);
+      const scheduleItems = document.querySelectorAll('.schedule li');
+
+      let closest = null;
+      let minDiff = Infinity;
+
+      scheduleItems.forEach(item => {
+        const date = item.getAttribute('data-date');
+        const time = item.getAttribute('data-time');
+        if (date !== todayStr) return;
+
+        const [hh, mm] = time.split(':');
+        const itemMinutes = parseInt(hh) * 60 + parseInt(mm);
+        const diff = Math.abs(nowMinutes - itemMinutes);
+        if (diff < minDiff) {
+          closest = item;
+          minDiff = diff;
+        }
+      });
+
+      scheduleItems.forEach(item => item.classList.remove('now'));
+      if (closest) closest.classList.add('now');
+    }
+
+    updateNowTime();
+    setInterval(updateNowTime, 60000); // 1分おきに更新
+  </script>
+</body>
+</html>
